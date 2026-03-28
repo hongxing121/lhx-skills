@@ -1,0 +1,12 @@
+{
+  "name": "lhx-skills",
+  "version": "1.0.0",
+  "description": "LHX's personal Claude Code skills collection — Amazon listing optimization, content creation tools",
+  "author": {
+    "name": "hongxing121",
+    "url": "https://github.com/hongxing121"
+  },
+  "repository": "https://github.com/hongxing121/lhx-skills",
+  "keywords": ["skills", "amazon", "listing-optimization", "content"],
+  "skills": "./skills"
+}
