@@ -1,4 +1,7 @@
 node_modules/
+bin/
+browse/
+data/
+*.bin
+*.exe
 .DS_Store
-*.log
-/tmp/
