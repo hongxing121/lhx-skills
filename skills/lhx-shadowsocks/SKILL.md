@@ -1,5 +1,5 @@
 ---
-name: lhx-shadowsocks
+name: deploy-shadowsocks
 description: 一键部署 Shadowsocks-libev VPN 服务到 AWS 或其他 Ubuntu 服务器。用户只需提供 SSH 密钥路径、服务器 IP 和密码，脚本自动完成所有配置。支持自定义端口和加密方式。
 ---
 
@@ -73,7 +73,7 @@ ssh -i {key} -o ConnectTimeout=5 {user}@{host} 'echo OK'
 将 `setup-shadowsocks.sh` 脚本上传到服务器：
 
 ```bash
-scp -i {key} ~/.claude/skills/lhx-shadowsocks/setup-shadowsocks.sh {user}@{host}:~/
+scp -i {key} ~/.claude/skills/deploy-shadowsocks/setup-shadowsocks.sh {user}@{host}:~/
 ```
 
 ### Step 5: 执行部署
