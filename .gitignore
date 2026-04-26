@@ -1,7 +1,10 @@
-node_modules/
-bin/
-browse/
-data/
-*.bin
-*.exe
-.DS_Store
+# 绝对不能提交的文件
+.env
+.env.*
+*.env
+**/credentials*
+**/*secret*
+**/*password*
+**/*token*
+*.pem
+*.key
