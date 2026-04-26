@@ -1,0 +1,40 @@
+{
+  "skill_name": "lhx-knowledge-graph",
+  "evals": [
+    {
+      "id": 1,
+      "name": "trigger-munger-explicit",
+      "prompt": "我想给芒格做一个像贝佐斯那样的知识库网站，把他的演讲和Poor Charlie's Almanack整理成中文知识图谱",
+      "expected_output": "Skill should trigger and start the workflow: ask user about source materials, create vault structure, plan parallel collection agents",
+      "files": []
+    },
+    {
+      "id": 2,
+      "name": "trigger-inamori-implicit",
+      "prompt": "稻盛和夫的《活法》《干法》《心法》几本书里其实有一套完整的'敬天爱人'哲学，能不能把它整理成一个能查能溯源的中文站点？我想做成像 buffett-letters-eir 那样的",
+      "expected_output": "Skill should trigger; should ask about copyright concerns for book content (not all chapters can be reproduced) and propose alternatives",
+      "files": []
+    },
+    {
+      "id": 3,
+      "name": "trigger-zhang-yiming",
+      "prompt": "张一鸣这些年的内部讲话和对外采访其实有不少有意思的方法论，能帮我整理成一个知识库网站吗",
+      "expected_output": "Skill should trigger; should ask user about which interviews/speeches they want included and propose subdomain naming",
+      "files": []
+    },
+    {
+      "id": 4,
+      "name": "no-trigger-summarize-only",
+      "prompt": "帮我总结一下贝佐斯1997年那封著名的股东信讲了什么核心观点",
+      "expected_output": "Skill should NOT trigger — user just wants a summary, not building a website. Should answer directly.",
+      "files": []
+    },
+    {
+      "id": 5,
+      "name": "no-trigger-personal-wiki",
+      "prompt": "我想把自己最近读的几本书的笔记整理成一个 Obsidian 库",
+      "expected_output": "Skill should NOT trigger — this is a personal note-taking project, not building a famous person's knowledge graph website",
+      "files": []
+    }
+  ]
+}

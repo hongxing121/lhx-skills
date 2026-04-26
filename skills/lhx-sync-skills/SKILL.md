@@ -11,6 +11,7 @@ Sync Claude Code skills bidirectionally with GitHub.
 /lhx-sync-skills          # 双向同步（默认）
 /lhx-sync-skills push     # 只推送本地 → GitHub
 /lhx-sync-skills pull     # 只拉取 GitHub → 本地
+/lhx-sync-skills clean    # 拉取 + 删除本地多余的 skill（与远端完全对齐）
 /lhx-sync-skills dry-run  # 预览变更，不执行
 ```
 
@@ -21,6 +22,7 @@ Check the argument the user provided (if any):
 - No argument or "sync": run `~/.claude/skills-repos/sync-skills.sh`
 - "push": run `~/.claude/skills-repos/sync-skills.sh --push-only`
 - "pull": run `~/.claude/skills-repos/sync-skills.sh --pull-only`
+- "clean": run `~/.claude/skills-repos/sync-skills.sh --clean`
 - "dry-run": run `~/.claude/skills-repos/sync-skills.sh --dry-run`
 
 Run the appropriate command and report the output.

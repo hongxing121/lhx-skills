@@ -1,0 +1,14 @@
+# Caddy 站点配置块模板
+# 把下面这块追加到 /etc/caddy/Caddyfile，替换 <人名> 和 <子域名>
+# 然后 sudo systemctl restart caddy
+
+<子域名>.feima.ai {
+    root * /var/www/<人名>
+    file_server
+    encode gzip
+    try_files {path} {path}.html {path}/index.html
+    log {
+        output file /var/log/caddy/<人名>-access.log
+        format console
+    }
+}
